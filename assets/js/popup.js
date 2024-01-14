@@ -28,12 +28,12 @@ if (isQuestionnaire1Filled && isQuestionnaire2Filled && isQuestionnaire3Filled &
 }*/
 
 
-document.getElementById('form-submit-pp1').addEventListener('click', function(event) {
+document.getElementById('form-submit-1').addEventListener('click', function(event) {
     event.preventDefault();
-    toggleFormSubmissionsPP1();
+    togglepp();
 });
 
-function toggleFormSubmissionsPP1() {
+function togglepp() {
     let isQuestionnaire1Filled = document.getElementById('dcu').value.trim() !== '';
     let isQuestionnaire2Filled = document.getElementById('uid').value.trim() !== '';
     let isQuestionnaire3Filled = document.getElementById('server').value.trim() !== '';
